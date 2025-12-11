@@ -72,6 +72,9 @@ Predicting the pixel depth value from a single RGB image.
 
 </div>
 
+We usually use the raw depth map as the SLAM input for pose optimization and map reconstruction, which indicate the real space depth. On the other hand, colorful result of depth map in thesis is convert the depth map type from gracyscale into rgb, which only use for direct visualization.
+
+
 ## Evaluation
 We using the prevalent package as [evo](https://github.com/MichaelGrupp/evo) for evaluation. There are two common evaluation metrics for camera trajectory, Detailed description can be found in [here](https://github.com/MichaelGrupp/evo/wiki/Metrics).
 
