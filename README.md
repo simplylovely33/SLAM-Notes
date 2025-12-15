@@ -72,7 +72,9 @@ Predicting the pixel depth value from a single RGB image.
 
 </div>
 
-We usually use the raw depth map as the SLAM input for pose optimization and map reconstruction, which indicate the real space depth. On the other hand, colorful result of depth map in thesis is convert the depth map type from gracyscale into rgb, which only use for direct visualization.
+We usually use the raw depth map as the SLAM input for camera localization and map reconstruction, which indicate the real space depth. On the other hand, colorful result in the thesis is convert the type of depth map from gracyscale into rgb, which only use for direct visualization.
+
+Besides, even use the RGB-D sensor or depth estimation model to gain the depth, there are still exist outliners in the all potential depth which will mislead camera trajectory estimation and introduce noise 3D points into the map.
 
 
 ## Evaluation
